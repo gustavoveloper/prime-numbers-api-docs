@@ -22,7 +22,7 @@ header .header-presentation {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 16px
+    padding: 16px
 }
 
 header .header-presentation > h1,

@@ -1,0 +1,10 @@
+/* Inline-code class styles */
+
+.inline-code {
+    background-color: #0003;
+    font-family: monospace;
+    color: black;
+    border-radius: 5px;
+    padding: 4px 6px;
+    font-weight: bold;
+}

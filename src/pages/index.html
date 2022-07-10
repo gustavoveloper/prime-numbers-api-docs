@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/code.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/link.css">
+    <link rel="stylesheet" href="../styles/code-tag.css">
+    <link rel="stylesheet" href="../styles/inline-code.css">
 </head>
 
 <body>
@@ -39,7 +43,51 @@
     </div>
     </header>
 
-    <main></main>
+    <main>
+        <section>
+            <h2>What is PrimeNumbersAPI?</h2>
+
+            <p>
+                It's a simple webservice that returns the 1000 first prime numbers. You can 
+                use this API to do things related to searches, tests, Math operations, etc.
+
+                Prime numbers, by the way, are natural numbers greater than one that have only 
+                two divisors: 1 and themselves. 2, 3, 5, 11, 29, for example, are prime numbers.
+            </p>
+
+            <p>
+                The API were written in JavaScript and uses NodeJS as runtime. The values are 
+                returned in JSON-array format.
+            </p>
+
+            <p>Github repository link: <a href="https://github.com/gustavoveloper/prime-numbers-api" target="_blank" rel="external" class="link" title="Project repository link">https://github.com/gustavoveloper/prime-numbers-api</a>.</p>
+        </section>
+
+        <section>
+            <h2>Response format</h2>
+
+            <p>
+                <strong>The API is JSON</strong>. It means that all HTTP responses are 
+                sent in JSON format. <br>
+
+                By the way, the response body have the same format for all requests: it 
+                has an error and an set of data.
+
+                <code>
+                    {
+                        "error": &lt;response-error&gt;,
+                        "data": &lt;response-data&gt;
+                    }
+                </code>
+            </p>
+
+            <p>
+                If any error occurs, the <span class="inline-code">data</span> field has <span class="inline-code">null</span> as value and the 
+                <span class="inline-code">error</span> field contains the error message. Else, the <span class="inline-code">error</span> field 
+                receives <span class="inline-code">null</span> and the <span class="inline-code">data</span> field contains the response data.
+            </p>
+        </section>
+    </main>
 
     <footer></footer>
 </body>

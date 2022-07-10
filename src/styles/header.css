@@ -1,0 +1,50 @@
+/* Page's header styles */
+
+header {
+    width: 100%;
+    background-image: url(../../images/euclides.jpg);
+    background-attachment: fixed
+}
+
+header > div {
+    width: 100%;
+    background-color: #000b;
+    display: flex;
+    flex-direction: column;
+    position: relative
+}
+
+
+header .header-presentation {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 16px
+}
+
+header .header-presentation > h1,
+header .header-presentation > h2 { color: white }
+
+header .header-presentation > h1 {
+    font-size: 4.25em;
+    margin: 10px 0
+}
+
+header .header-presentation > h2 { font-size: 1.6em }
+
+
+header .header-social-media {
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between
+}
+
+
+header img.header-social-media-icon { width: 45px }
+
+header img.header-social-media-icon:hover { filter: brightness(.85) }

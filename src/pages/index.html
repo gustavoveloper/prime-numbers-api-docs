@@ -39,7 +39,7 @@
 
         <div class="header-presentation">
             <h1 class="code">PrimeNumbersAPI</h1>
-            <h2>Getting the 1000 first prime numbers with NodeJS.</h2>
+            <h2>Getting the first 1000 prime numbers with NodeJS.</h2>
         </div>
     </div>
     </header>
@@ -49,7 +49,7 @@
             <h2>What is PrimeNumbersAPI?</h2>
 
             <p>
-                It's a simple webservice that returns the 1000 first prime numbers. You can 
+                It's a simple webservice that returns the first 1000 prime natural numbers. You can 
                 use this API to do things related to searches, tests, Math operations, etc.
 
                 Prime numbers, by the way, are natural numbers greater than one that have only 
@@ -118,6 +118,7 @@
                         HTTP/1.1 200 OK<br>
                         Server: PrimeNumbersAPI-Server<br>
                         Date: Sun, 10 Jul 2022 20:27:41 GMT<br>
+                        Content-Type: application/json<br>
                         &lt;HTTP headers...&gt;<br>
                         <br>
 
@@ -128,7 +129,7 @@
                     </code>
 
                     After sending the response, the API server closes the connection with the 
-                    client by default (the <span class="inline-code">Content-Type</span> HTTP 
+                    client by default (the <span class="inline-code">Connection</span> HTTP 
                     header is set to <span class="inline-code">close</span> for all responses).
                 </p>
             </section>

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../styles/link.css">
     <link rel="stylesheet" href="../styles/code-tag.css">
     <link rel="stylesheet" href="../styles/inline-code.css">
+    <link rel="stylesheet" href="../styles/h3.css">
 </head>
 
 <body>
@@ -86,6 +87,51 @@
                 <span class="inline-code">error</span> field contains the error message. Else, the <span class="inline-code">error</span> field 
                 receives <span class="inline-code">null</span> and the <span class="inline-code">data</span> field contains the response data.
             </p>
+        </section>
+
+        <section>
+            <h2>Using the API</h2>
+
+            <p>
+                The API has two endpoints: one for retrieving prime numbers 
+                and one for accessing this documentation. Let's see each one of them. <br>
+
+                The used HTTP user-agent will be curl.
+            </p>
+
+
+            <section>
+                <h3>Retrieving the first 1000 prime numbers</h3>
+
+                <p>
+                    With curl, make a GET request to the <span class="inline-code">/api</span> 
+                    endpoint:
+
+                    <code>
+                        $ curl http://host:8080/api
+                    </code>
+
+                    OBS.: In this webservice, all route names are case-insentitive. <br>
+                    Your result must be something like:
+
+                    <code>
+                        HTTP/1.1 200 OK<br>
+                        Server: PrimeNumbersAPI-Server<br>
+                        Date: Sun, 10 Jul 2022 20:27:41 GMT<br>
+                        &lt;HTTP headers...&gt;<br>
+                        <br>
+
+                        {
+                            "error": null,
+                            "data": [ 2, 3, 5, 7, 11, 13, 17, 19, ... ]
+                        }
+                    </code>
+
+                    After sending the response, the API server closes the connection with the 
+                    client by default (the <span class="inline-code">Content-Type</span> HTTP 
+                    header is set to <span class="inline-code">close</span> for all responses).
+                </p>
+            </section>
         </section>
     </main>
 

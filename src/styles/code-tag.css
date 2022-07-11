@@ -11,3 +11,10 @@ code {
     font-weight: bold;
     margin: 16px 0
 }
+
+
+
+
+@media screen and (max-width: 650px) {
+    code { font-size: 15px }
+}

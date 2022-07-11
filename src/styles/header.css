@@ -48,3 +48,18 @@ header .header-social-media {
 header img.header-social-media-icon { width: 45px }
 
 header img.header-social-media-icon:hover { filter: brightness(.85) }
+
+
+
+
+@media screen and (max-width: 650px) {
+    header { background-position: center }
+
+    header .header-presentation > h1 { font-size: 25px }
+
+    header .header-presentation > h2 { font-size: 18px }
+
+    header .header-social-media { padding: 5px }
+
+    header img.header-social-media-icon { width: 27px }
+}

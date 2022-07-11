@@ -12,3 +12,14 @@ main {
 main h2 { margin: 16px 0 }
 
 main p { margin: 10px 0 }
+
+
+
+
+@media screen and (max-width: 650px) {
+    main { padding: 10px; margin: 5px 0 }
+
+    main h2 { font-size: 20px; margin: 12px 0 }
+
+    main p { font-size: 15px }
+}

@@ -8,3 +8,10 @@
     padding: 4px 6px;
     font-weight: bold;
 }
+
+
+
+
+@media screen and (max-width: 650px) {
+    .inline-code { padding: 2px 4px; font-size: 12px }
+}
